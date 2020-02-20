@@ -75,12 +75,5 @@ var buildData = [
     "longitude": -74.085430,
     "latitude": 41.744140,
     "wiki": "https://en.wikipedia.org/wiki/State_University_of_New_York_at_New_Paltz"
-  },
-  {
-    "name": "Shruti",
-    "pizza_place": "Artichoke",
-    "longitude": -74.00723,
-    "latitude": 40.71305,
-    "program": "Wagner"
   }
 ]
