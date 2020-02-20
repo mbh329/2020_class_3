@@ -31,39 +31,75 @@ map.addControl(new mapboxgl.NavigationControl());
 
 
 // iterate over each object in studentData
-studentData.forEach(function(studentEntry) {
+buildData.forEach(function(buildEntry) {
   // for each object in the studentData, add a marker to the map with a popup
   new mapboxgl.Marker()
-    .setLngLat([studentEntry.longitude, studentEntry.latitude])
+    .setLngLat([buildEntry.longitude, buildEntry.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-     .setHTML(`${studentEntry.name} thinks ${studentEntry.pizza_place} is the best pizza in the world!`))
+     .setHTML(`The ${buildEntry.name} located at  ${buildEntry.street_location} is my favorite building!`))
     .addTo(map);
 })
 
 // event listeners for the fly to buttons
 
-$('#china').on('click', function() {
+$('#chicago').on('click', function() {
   map.flyTo({
-    center: [112.556005, 37.818758],
+    center: [-87.627838, 41.876301],
     zoom: initialZoom
   })
 })
 
-$('#michigan').on('click', function() {
+$('#denver').on('click', function() {
 
-  var michiganLngLat = [-83.10538, 42.50448]
+  var denverLngLat = [-105.000076, 39.753170]
 
   map.flyTo({
-    center: michiganLngLat,
+    center: denverLngLat,
     zoom: initialZoom
   })
 })
 
-$('#colombia').on('click', function() {
-  var colombiaLngLat = [-73.997208, 0.721615]
+$('#seattle').on('click', function() {
+  var seattleLngLat = [-122.333488, 47.602188]
 
   map.flyTo({
-    center: colombiaLngLat,
+    center: seattleLngLat,
+    zoom: initialZoom
+  })
+})
+
+$('#sanfran').on('click', function() {
+  var sanfranLngLat = [-122.404870, 37.796400]
+
+  map.flyTo({
+    center: sanfranLngLat,
+    zoom: initialZoom
+  })
+})
+
+$('#losangeles').on('click', function() {
+  var losangelesLngLat = [-118.300400, 34.118271]
+
+  map.flyTo({
+    center: losangelesLngLat,
+    zoom: initialZoom
+  })
+})
+
+$('#providence').on('click', function() {
+  var providenceLngLat = [-71.401790, 41.822580 ]
+
+  map.flyTo({
+    center: providenceLngLat,
+    zoom: initialZoom
+  })
+})
+
+$('#newpaltz').on('click', function() {
+  var newpaltzLngLat = [-74.085430, 41.744140]
+
+  map.flyTo({
+    center: newpaltzLngLat,
     zoom: initialZoom
   })
 })

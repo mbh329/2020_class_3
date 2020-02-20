@@ -1,101 +1,80 @@
-var studentData = [
+var buildData = [
   {
-    "name": "Chris",
-    "pizza_place": "Ben's Pizza",
-    "longitude": -74.0027456,
-    "latitude": 40.7302075,
-    "program": "Wagner"
+    "name": "Woolworth Building",
+    "street_location": " 233 Broadway, New York, NY 10007",
+    "longitude": -74.008423,
+    "latitude": 40.712280,
+    "wiki": "https://en.wikipedia.org/wiki/Woolworth_Building"
   },
   {
-    "name": "Mikeala",
-    "pizza_place": "Green Lantern",
-    "longitude": -83.10538,
-    "latitude": 42.50448,
-    "program": "Wagner"
+    "name": "Bartow-Pell Mansion",
+    "street_location": "895 Shore Rd, The Bronx, NY 10464",
+    "longitude": -73.805939,
+    "latitude": 40.871811,
+    "wiki": "https://en.wikipedia.org/wiki/Bartow-Pell_Mansion"
   },
   {
-    "name": "Martha",
-    "pizza_place": "L&B Spumoni Gardens",
-    "longitude": -73.9813041,
-    "latitude": 40.5947441,
-    "program": "CUSP"
+    "name": "Flushing Town Hall",
+    "street_location": "37-35 Northern Blvd, Flushing, NY 11354",
+    "longitude": -73.813927,
+    "latitude": 40.765110,
+    "wiki": "https://en.wikipedia.org/wiki/Flushing_Town_Hall"
   },
   {
-    "name": "Miles",
-    "pizza_place": "Spunto",
-    "longitude": -74.00464,
-    "latitude": 40.72984,
-    "program": "Wagner"
+    "name": "Old Brooklyn Fire Department HQ",
+    "street_location": "365-67 Jay Street, Brooklyn, NY 11201",
+    "longitude": -73.987190,
+    "latitude": 40.695550,
+    "wiki": "https://en.wikipedia.org/wiki/Old_Brooklyn_Fire_Headquarters"
   },
   {
-    "name": "Yiyong",
-    "pizza_place": "Pizza Hut",
-    "longitude": 112.556005,
-    "latitude": 37.818758,
-    "program": "Wagner"
+    "name": "Harold Washington Library",
+    "street_location": "400 S State St, Chicago, IL 60605",
+    "longitude": -87.627838,
+    "latitude": 41.876301,
+    "wiki": "https://en.wikipedia.org/wiki/Harold_Washington_Library"
   },
   {
-    "name": "Jenee",
-    "pizza_place": "Champion",
-    "longitude": -73.997208,
-    "latitude": 0.721615,
-    "program": "Wagner"
+    "name": "Denver Union Station",
+    "street_location": "1701 Wynkoop St, Denver, CO 80202",
+    "longitude": -105.000076,
+    "latitude": 39.753170,
+    "wiki": "https://en.wikipedia.org/wiki/Denver_Union_Station"
   },
   {
-    "name": "Sean",
-    "pizza_place": "Table 87",
-    "longitude": -73.9935622,
-    "latitude": 40.6706709,
-    "program": "Wagner"
+    "name": "Pioneer Building",
+    "street_location": "600 1st Ave, Seattle, WA 98104",
+    "longitude": -122.333488,
+    "latitude": 47.602188,
+    "wiki": "https://en.wikipedia.org/wiki/Pioneer_Building_(Seattle)"
   },
   {
-    "name": "Max",
-    "pizza_place": "Lucia's",
-    "longitude": -73.830928,
-    "latitude": 40.761042,
-    "program": "CUSP"
+    "name": "Colombus Tower",
+    "street_location": "900 Kearny St, San Francisco, CA 94133",
+    "longitude": -122.404870,
+    "latitude": 37.796400,
+    "wiki": "https://en.wikipedia.org/wiki/Columbus_Tower_(San_Francisco)"
   },
   {
-    "name": "Olivia",
-    "pizza_place": "Joe & Pats",
-    "longitude": -73.9862301,
-    "latitude": 40.728906,
-    "program": "Wagner"
+    "name": "Griffith Observatory",
+    "street_location": "2800 E Observatory Rd, Los Angeles, CA 90027",
+    "longitude": -118.300400,
+    "latitude": 34.118271,
+    "wiki": "https://en.wikipedia.org/wiki/Griffith_Observatory"
   },
   {
-    "name": "Stef",
-    "pizza_place": "Champion",
-    "longitude": -74.0004546,
-    "latitude": 40.7328837,
-    "program": "Wagner"
+    "name": "Corliss–Carrington House",
+    "street_location": "66 Williams St Providence, RI 02906",
+    "longitude": -71.401790,
+    "latitude": 41.822580,
+    "wiki": "https://en.wikipedia.org/wiki/Corliss–Carrington_House"
   },
   {
-    "name": "Mike",
-    "pizza_place": "Percy's Pizza",
-    "longitude": -73.9956117,
-    "latitude": 40.7273838,
-    "program": "SPS"
-  },
-  {
-    "name": "Mei",
-    "pizza_place": "Love & Dough",
-    "longitude": -73.9896728,
-    "latitude": 40.7029403,
-    "program": "CUSP"
-  },
-  {
-    "name": "Wayne",
-    "pizza_place": "Paulie Gee's",
-    "longitude": -73.957192,
-    "latitude": 40.728376,
-    "program": "Tandon"
-  },
-  {
-    "name": "Doszhan",
-    "pizza_place": "NY Pizza Suprema",
-    "longitude": -73.9973929,
-    "latitude": 40.7501162,
-    "program": "Wagner"
+    "name": "Old Main",
+    "street_location": "Tricor Ave, New Paltz, NY 12561",
+    "longitude": -74.085430,
+    "latitude": 41.744140,
+    "wiki": "https://en.wikipedia.org/wiki/State_University_of_New_York_at_New_Paltz"
   },
   {
     "name": "Shruti",
