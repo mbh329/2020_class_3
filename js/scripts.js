@@ -5,7 +5,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWJoMzI5IiwiYSI6ImNrNnUyejFycTA1bzAzbXBtb205c
 // we want to return to this point and zoom level after the user interacts
 // with the map, so store them in variables
 var initialCenterPoint = [-73.987, 40.735]
-var initialZoom = 10.67
+var initialZoom = 10.0
 
 
 // create an object to hold the initialization options for a mapboxGL map
@@ -36,7 +36,8 @@ buildData.forEach(function(buildEntry) {
   new mapboxgl.Marker()
     .setLngLat([buildEntry.longitude, buildEntry.latitude])
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-     .setHTML(`The ${buildEntry.name} located at  ${buildEntry.street_location} is my favorite building!`))
+     .setHTML(`The ${buildEntry.name} located at  ${buildEntry.street_location} is my favorite building!
+       Here is some more information about it: ${buildEntry.wiki}`))
     .addTo(map);
 })
 
