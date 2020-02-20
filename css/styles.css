@@ -5,6 +5,7 @@ html {
 
 /* get rid of the browser's default margin and padding around the body */
 body {
+  background: url(https://i.pinimg.com/originals/66/91/dd/6691dd3ae4b0a2545c4d01fc72a1c39b.jpg);
   margin: 0;
   padding: 0;
 }
